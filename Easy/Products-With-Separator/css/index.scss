@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+$border-radius:5px;
+$main-oclor: #f73859;
+.app {
+  width: 99%;
+  margin:auto ;
+  background-color: #20bfa9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width:530px) {
+      height: 485px;
+  }
+  @media (min-width:531px) {
+    height: 420px;
+}
+@media (min-width:575px) {
+  height: 350px;
+}
+
+  .product-card {
+    border-radius: $border-radius;
+    width: 40%;
+    height: 92%;
+    background-color: #fff;
+    @media (min-width:1050px) {
+      width: 30%;
+}
+@media (min-width:1500px) {
+    width: 20%;
+}
+    .title {
+      width: 100%;
+      padding: 25px;
+
+      border-radius:$border-radius $border-radius 0 0;
+      text-align: center;
+      background-color: #282828;
+      color: #fff;
+      h1 {
+        margin: 0;
+        padding-bottom: 20px;
+        font : {
+          size:30px;
+          family : sans-serif;
+          weight: 600;
+        }
+        span {
+          color:#4caf50
+        }
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      .product-info {
+        width: 65%;
+        padding-bottom: 20px;
+        background-color: #fff;
+        z-index: 1;
+        margin-top: -20px;
+        box-shadow: 0px 5px 16px 2px #eeeeee;
+        border-radius: 5px;
+        text-align: center;
+        p {
+          position: relative;
+          &::before {
+            content: "";
+            position:absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color:$main-oclor ;
+            left: 40px;
+            bottom: 5px;
+            @media (max-width:600px) {
+              display: none;
+            }
+          }
+        }
+        button {
+          background-color: $main-oclor;
+          color: rgb(134, 95, 95);
+          border: none;
+          padding:10px 30px;
+          border-radius: $border-radius;
+          @media (max-width:600px) {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

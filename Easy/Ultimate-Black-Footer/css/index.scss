@@ -1,0 +1,172 @@
+$main-color:#e2e2e2;
+$second-color:#a0a0a0;
+p {
+    color: $second-color;
+}
+h2,span {
+    color: $main-color;
+}
+h2,p {
+    margin: 0;
+}
+%container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.app {
+    width: 98%;
+    padding-top: 30px;
+    background-color: #333;
+    @media (min-width:1000px) {
+        margin: 20px auto;
+        width: 100%;
+    }
+    .container {
+      @extend %container;
+        .upfooter {
+    @media (max-width: 1000px) { 
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+            padding-bottom: 30px;
+            width: 100%;
+            height: 70%;
+            padding-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            .contact_us,.information,.myaccont,.newsliiter {
+                display: flex;
+                flex-direction: column;
+            }
+            .contact_us {
+                width: 100%;
+                height: 100%;
+                gap: 30px;
+
+                h2 {
+                    width:100%;
+                }
+                p {
+                    width: 100%;
+                    color: $second-color;
+                }
+                .info {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        margin: 0;
+                    }
+                    .right,.left {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+        .information ,.myaccont {
+            width: 15%;
+            height: 100%;
+            gap: 10px;
+            p {
+                margin: 0;
+            }
+        }
+        .information {
+            @media (max-width: 800px) { 
+                width: 50%;
+             }
+        }
+        .myaccont {
+            @media (max-width: 800px) { 
+                width: 40%;
+             }
+        }
+        .newsliiter {
+            width: 40%;
+            gap: 20px;
+            @media (max-width: 800px) { 
+                width: 100%;
+             }
+            .order {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                input {
+                    width: 80%;
+                    justify-content: space-between;
+                    background-color: #ffffff17;
+                    border: none;
+                    outline: none;
+                }
+                button {
+                    width: fit-content;
+                    background-color: red;
+                    color: $main-color;
+                    text-align: center;
+                    padding: 15px;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .icons {
+                width: 50%;
+                display: flex;
+                text-align: center;
+                gap: 20px;
+                i {
+                    color: $main-color;
+                    width: calc(90%/5);
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+                .fa-twitter {
+                    background-color: rgb(27, 156, 216);
+                }
+                .fa-facebook {
+                    background-color: rgba(10, 103, 190, 0.726);
+                }  .fa-youtube {
+                    background-color: rgb(216, 27, 27);
+                }  .fa-instagram {
+                    background-color: rgb(119, 0, 40);
+                }
+            }  .fa-linkedin {
+                background-color: rgb(7, 75, 163);
+            }
+        }
+    }
+    .downfooter {
+        background-color: #2b2b2b;
+        padding: 20px;
+        .card {
+            @extend %container;
+            display: flex;
+            justify-content: space-between;
+        }
+     
+        .creadit {
+            display: flex;
+            width: 15%;
+            @media (max-width:1000px) {
+                width: 25%;
+            }
+            i {
+                width: calc(100%/4);
+            }
+            .fa-paypal {
+                color :#1b9cd8;
+            }
+            .fa-cc-visa {
+                color: #fff;
+            }
+            .fa-credit-card {
+                color :darkgray;
+            }
+            .fa-cc-amazon-pay {
+                color: orange;
+            }
+        }
+    }
+}

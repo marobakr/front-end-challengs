@@ -1,0 +1,181 @@
+// globa var
+.I {background-color: #1abc9c}
+.II {background-color: #e67e22}
+.III {background-color: #f39c12}
+.IV{background-color: #27ae60}
+.V{background-color: #3498db}
+.VI{background-color: #8e44ad}
+.VII{background-color: #c0392b}
+.VIII{background-color: #2c3e50}
+.app {
+  width: 98%;
+  margin: 20px auto;
+  text-align: center;
+  height: 350px;
+  color: #fff;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: auto;
+      font: {
+        size: 20px;
+        family:sans-serif;
+        weight:bold
+      }
+    }
+  }
+// frist method use grid
+// .app {
+//   display: grid;
+//   height: 350px;
+//   grid-template-areas:
+//   'myAI myAI myAII myAII myAII myAIII'
+//   'myAI myAI myAIV myAIV myAIV myAIII'
+//   'myAV myAV myAV myAVI myAVIII myAVIII'
+//   'myAVII myAVII myAVII myAVII myAVIII myAVIII';
+//     span {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       margin: auto;
+//       height: 100%;
+//     }
+//   .I {
+//     grid-area: myAI ;
+//   }
+//   .II {
+//     grid-area: myAII ;
+//   }
+//   .III {
+//     grid-area: myAIII ;
+//   }
+//   .IV {
+//     grid-area: myAIV ;
+//   }
+//   .V{
+//     grid-area: myAV ;
+//   }
+//   .VI{
+//     grid-area: myAVI ;
+//   }
+//   .VII{
+//     grid-area: myAVII ;
+//   }
+//   .VIII{
+//     grid-area: myAVIII ;
+//   }
+// }
+
+/* second method use flex */
+// .app {
+//   width: 98%;
+//   margin: 20px auto;
+//   text-align: center;
+//   height: 350px;
+//   color: #fff;
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: flex-start;
+//     span {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 100%;
+//       margin: auto;
+//       font: {
+//         size: 20px;
+//         family:sans-serif;
+//         weight:bold
+//       }
+//     }
+// }
+//   .I {
+//     width:25%;
+//     height: 50%;
+//     background-color:  #1abc9c;
+//   }
+//   .collect {
+//     width:60%;
+//     .II {
+//       width: 100%;
+//       height: 50%;
+//     }
+//     .III {
+//       width: 100%;
+//       height: 50%;
+//     }
+//     }
+//   .IV {
+//     width: 15%;
+//     height: 50%;
+//   }
+//   .V {
+//     width: 35%;
+//     height: 25%;
+//   }
+//   .VI {
+//     width: 15%;
+//     height: 25%;
+//   }
+//   .VII {
+//     width: 100%;
+//     height: 200%;
+//   }
+//   .VIII {
+//     // order: 1;
+//     width: 50%;
+//     height: 25%;
+//   }
+//   .collect_2 {
+//     width: 50%;
+//   }
+
+/* last method use float */
+// .app {
+//     div {
+//       float: left;
+//     }
+//       .I{
+//         width: 30%;
+//         height: 50%;
+//         float: left;
+//       }
+//       .collect {
+//         width: 50%;
+//         height: 50%;
+//         .II {
+//           width: 100%;
+//           height: 50%;
+//         }
+//         .III {
+//           width: 100%;
+//           height: 50%;
+//         }
+//       }
+//       .IV {
+//         width:20%;
+//         height:50%;
+//       }
+//       .V {
+//         width: 45%;
+//         height: 25%;
+//       }
+//       .VI {
+//         width: 15%;
+//         height: 25%;
+//       }
+//       .collect_2 {
+//         width: 40%;
+//         height: 25%;
+//         .VII {
+//           width:100%;
+//           height: 200%;
+//         }
+//       }
+//       .VIII {
+//         width: 60%;
+//         height: 25%;
+//       }
+//   }

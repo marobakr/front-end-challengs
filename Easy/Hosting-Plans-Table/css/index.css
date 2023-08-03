@@ -1,0 +1,121 @@
+.app {
+  text-transform: capitalize;
+  width: 96%;
+  margin: 10px auto;
+}
+
+.app .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .app .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.app .container .detalis {
+  color: #817e81d9;
+}
+
+.app .container .cadr {
+  border-right: 1px solid #ccc;
+  background-color: #eee;
+  margin-bottom: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .app .container .cadr {
+    width: calc(95%/1);
+    margin: auto;
+  }
+}
+
+@media (min-width: 577px) {
+  .app .container .cadr {
+    width: calc(99%/2);
+  }
+}
+
+@media (min-width: 992px) {
+  .app .container .cadr {
+    width: calc(99%/3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .app .container .cadr {
+    width: calc(99.9%/5);
+  }
+}
+
+.app .container .cadr h1 {
+  color: #fff;
+  margin: 0;
+  background-color: #fc5103;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: open sans-serif;
+}
+
+.app .container .cadr p {
+  padding: 10px 10px;
+}
+
+.app .container .cadr p .price {
+  color: #fc5103;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: system-ui;
+}
+
+.app .container .cadr p sup {
+  top: -2.5em;
+}
+
+.app .container .cadr p sub {
+  top: -0.75em;
+  color: #727272;
+}
+
+.app .container .cadr .def {
+  background-color: #d7d7d782;
+}
+
+.app .container .cadr p button {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.app .container .cadr i {
+  color: #333;
+}
+
+.app .container .premium p button {
+  background-color: #fc5103;
+}
+/*# sourceMappingURL=index.css.map */

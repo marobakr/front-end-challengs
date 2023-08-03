@@ -1,0 +1,149 @@
+.app {
+  width: 95%;
+  margin: auto;
+  background-color: #eee;
+}
+
+.app .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.app .container .title {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.app .container .title h1 {
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.app .container .title h1::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 2px;
+  background-color: red;
+  margin: auto;
+  bottom: 0;
+  -webkit-transform: translate(-170px, 10px);
+          transform: translate(-170px, 10px);
+}
+
+.app .container .title p {
+  color: #878787;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.app .container .start-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1px;
+}
+
+.app .container .start-section .cadr {
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  padding-top: 20px;
+}
+
+.app .container .start-section .cadr .footer img {
+  max-width: 47%;
+}
+
+.app .container .start-section .cadr .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.app .container .start-section .cadr .info button {
+  max-width: 50%;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 700;
+  border: none;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.app .container .start-section .II {
+  width: calc(95%/4);
+}
+
+.app .container .start-section .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #707070;
+}
+
+.app .container .start-section .date span {
+  color: black;
+}
+
+.app .container .start-section .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.app .container .start-section .price span {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.app .container .start-section .price button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

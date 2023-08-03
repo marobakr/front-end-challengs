@@ -1,0 +1,114 @@
+.app {
+  width: 95%;
+  margin: auto;
+  background-color: #eee;
+  .container {
+    padding: {
+      left: 20px;
+      right: 20px;
+      top: 10px;
+      bottom: 10px;
+    }
+    .title {
+      padding: {
+        top: 10px;
+        bottom: 20px
+      };
+      text-align: center;
+      h1 {
+        position: relative;
+        color :black;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        &::after {              
+          content: "";
+          position: absolute;
+          width: 76px;
+          height: 2px;
+          background-color: red;
+          margin: auto;
+          bottom: 0;
+          transform: translate(-170px,10px);
+        }
+      }
+      p {
+        color: #878787;
+        font : {
+          size:15px;
+          family :sans-serif
+        }
+      }
+    
+    }
+    .start-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      .cadr {
+        height: 120px;
+        align-items: center;
+        display:flex ;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #fff;
+        padding-top: 20px;
+        .footer {
+          img {
+            max-width: 47%;
+          }
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          button {
+            max-width:50% ;
+            font : {
+              size: 15px;
+              family:sans-serif;
+              weight:700;
+            }
+            border: none;
+            background-color: green;
+            color: #fff;
+            border-radius: 5px;
+            padding: 2px 10px;
+          }
+      }
+        }
+        .II {
+          width: calc(95%/4);
+        }
+        .date {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          font-size: 13px;
+          font-weight: 700;
+          font-family: sans-serif;
+          color: #707070;
+          span {
+            color: black;
+          }
+        }
+        .price {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          span {
+            width: 50%;
+            margin: auto;
+            padding-bottom: 10px;
+          }
+          button {
+            width: fit-content;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }

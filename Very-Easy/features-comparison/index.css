@@ -1,0 +1,178 @@
+.parent {
+    width: 99%;
+    height: 1300px;
+    background-color: #eee;
+    margin:10px 10px;
+}
+.all-section {
+    display: flex;
+    width: 100%;
+    height: 98%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.basic , .professiolan  {
+    width: 40%;
+    height: 89%;
+    background: #fff;
+    margin-top: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.container {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 91% ;
+    justify-content: space-evenly;
+}
+ .headr {
+    font-family: Oswald;
+     padding: 15px;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px;
+     color: #fff;
+     font-size: 24px;
+}
+.bas {
+    background-color: #f44336;
+}
+.pro {
+    background-color: #2196f3;
+    
+}
+.parent .basic .container  p ,.parent .professiolan .container  p {
+    position: relative;
+    font-size: 15px;
+}
+.parent .basic .container  p::before {
+    content: "";
+    position:absolute;
+    width: 109%;
+    height: 1%;
+    top: 55px;
+    border-bottom: 1px solid #eee;
+}
+.parent .basic .container  p #tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    top: 7px;
+    border-radius: 50%;
+    background-color: #009688;
+}
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 46%;
+    height: 31%;
+    width: 5px;
+    background-color: #fff;
+    content: "";
+    transform: translateX(11px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 6px;
+    width: 60%;
+    background-color: #fff;
+    content: "";
+    transform: translateX(13px) rotate(-43deg);
+    transform-origin: left bottom;
+}
+.professiolan::after {   
+    content: "";
+    position: absolute;
+    width: 85px;
+    color: #fff;
+    right: 224px;
+    top: 66px;
+    border-color: #2196f3 transparent #2196f3 #2196f3;
+    border-style: solid;
+    border-width: 20px;
+    font-size: larger;
+    text-align: center;
+
+}
+.professiolan::before {
+    content: "Save 50%";
+    font-family: Oswald;
+    position: absolute;
+    width: 93px;
+    color: #fff;
+    right: 244px;
+    top: 70px;
+    border-color: #2196F5 transparent #2196f3 #2196f3;
+    font-size: larger;
+    text-align: center;
+    z-index: 1;
+}
+
+.parent .professiolan .container  p::before {
+    content: "";
+    position:absolute;
+    width: 109%;
+    height: 1%;
+    top: 55px;
+    border-bottom: 1px solid #eee;
+}
+.parent .professiolan .container  p span {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    top: 7px;
+    border-radius: 50%;
+    background-color: #009688;
+}
+.parent .professiolan .container p:nth-last-child(2)::after {
+    color: #fff;
+    padding: 6px;
+    content: "?";
+    background-color: #7e7e7e;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+#false::before {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 2px;
+    width: 23px;
+    background-color: #fff;
+    content: "";
+    transform: translateX(9px) rotate( 
+-51deg);
+    transform-origin: left bottom;
+}
+#false::after {
+    position: absolute;
+    left: 0;
+    top: 18%;
+    height: 2px;
+    width: 23px;
+    background-color: #fff;
+    content: "";
+    transform: translateX(6px) rotate( 
+41deg);
+    transform-origin: left bottom;
+}
+.parent .basic .container  p #false {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    top: 7px;
+    border-radius: 50%;
+    background-color: red;
+}

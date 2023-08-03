@@ -1,0 +1,189 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container, .parent .child-card {
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-right: 80px;
+}
+
+* {
+  text-transform: capitalize;
+}
+
+:root {
+  --main-color:#e5af40;
+  --back-color:#51509b;
+  --heading-color:#464b5f;
+  --border-main:5px;
+}
+
+.parent {
+  border-radius: var(--border-main);
+  padding-bottom: 40px;
+  border-radius: var(--border-main);
+  margin: auto;
+  background-color: var(--back-color);
+}
+
+@media (min-width: 576px) {
+  .parent {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .parent {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .parent {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .parent {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .parent {
+    width: 50%;
+  }
+}
+
+.parent .title {
+  width: 100%;
+}
+
+.parent .title .container, .parent .title .child-card {
+  color: #fff;
+}
+
+.parent .title h1 {
+  padding-top: 40px;
+}
+
+.parent .title h1 i {
+  color: var(--main-color);
+}
+
+.parent .child-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent .child-card ._card {
+  width: 50%;
+  background-color: #fff;
+  border-radius: var(--border-main);
+  padding-left: 40px;
+  height: 50%;
+}
+
+.parent .child-card ._card .info {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.parent .child-card ._card .info h2 {
+  position: relative;
+  color: var(--heading-color);
+  z-index: 2;
+}
+
+.parent .child-card ._card .info h2::after {
+  content: "";
+  position: absolute;
+  background-color: #ffeabe;
+  width: 50%;
+  height: 6px;
+  bottom: 1px;
+  z-index: -1;
+  left: 0;
+}
+
+.parent .child-card ._card .info h2 i {
+  color: var(--main-color);
+}
+
+.parent .child-card ._card .info hr {
+  opacity: 0.5;
+  width: 90%;
+  margin: 0;
+}
+
+.parent .child-card ._card .info p {
+  width: 90%;
+}
+
+.parent .child-card ._card .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.parent .child-card ._card .footer-info .price-info {
+  width: 50%;
+  color: var(--heading-color);
+}
+
+.parent .child-card ._card .footer-info .price-info sup {
+  font-size: 35px;
+}
+
+.parent .child-card ._card .footer-info .price-info .price {
+  color: var(--heading-color);
+  font-size: 50px;
+}
+
+.parent .child-card ._card .footer-info .price-info sub {
+  font-size: 15px;
+}
+
+.parent .child-card ._card .footer-info button {
+  padding: 15px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 0;
+  border-radius: var(--border-main);
+  cursor: pointer;
+}
+
+.parent .child-card ._card .Frist-title-footer p {
+  width: 100%;
+  padding-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.parent .child-card ._card .Frist-title-footer p span {
+  color: #484d60;
+  font-style: oblique;
+  font-size: 18px;
+  font-family: system-ui;
+}
+
+.parent .II-card {
+  -webkit-box-shadow: inset 15px 0px 12px 0px #eee;
+          box-shadow: inset 15px 0px 12px 0px #eee;
+}
+/*# sourceMappingURL=index.css.map */

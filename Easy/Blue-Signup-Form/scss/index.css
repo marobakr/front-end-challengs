@@ -1,0 +1,113 @@
+* {
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent, .parent .card, .parent .card form, .parent .card .footer, .parent .card .social-media, .parent .card .social-media .social {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.parent .card h1, .parent .card button, .parent .card .footer span {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: oblique;
+  text-transform: inherit;
+}
+
+.parent {
+  border: 2px solid #ccc;
+  width: 390px;
+  margin: 10px auto;
+  background-color: #2192f3;
+}
+
+.parent .card {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 95%;
+  margin: auto;
+}
+
+.parent .card h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.parent .card form {
+  padding-top: 0;
+}
+
+.parent .card form .input-icons {
+  position: relative;
+}
+
+.parent .card form .input-icons i {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  color: #09090963;
+}
+
+.parent .card form .input-icons:hover i {
+  opacity: .1;
+}
+
+.parent .card form input {
+  z-index: 0;
+  height: 37px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #4a4545d6;
+  outline: none;
+}
+
+.parent .card button {
+  width: 98%;
+  margin: auto 5px;
+  background-color: #2192f3;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.parent .card .footer {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px dashed #b1adad;
+}
+
+.parent .card .footer span {
+  padding-left: 5px;
+  color: #2192f3;
+}
+
+.parent .card .social-media {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.parent .card .social-media .title {
+  color: #585858;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.parent .card .social-media .social {
+  width: 100%;
+  padding: 0 10px;
+  height: 50px;
+}
+
+.parent .card .social-media .social i {
+  padding-left: 5px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,219 @@
+$I-color: #dfdfdf;
+$II-color: #414146;
+$III-color: #f75525;
+$IIIV-color: #565a60;
+$V-color: #ab5841;
+$VI-color: #723927;
+.app {
+  color: #fff;
+  width: 99%;
+  margin: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  .child {
+    width: 35%;
+    height: 100%;
+  }
+  .litle-child {
+    width: 30%;
+    height: 100%;
+  }
+  .card-I {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .I-row {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      .I {
+        width: 30%;
+        background-color: $I-color;
+      }
+      .II {
+        padding: {
+          left: 1%;
+          bottom: 1%;
+        }
+        width: 24%;
+        height: 99%;
+        color: #fff;
+        text-align: center;
+        background-color: $II-color;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+      }
+      .III {
+        width: 45%;
+        background-color: $I-color;
+        .icons {
+          display: flex;
+          flex-direction: column;
+          i {
+            padding: 10px;
+            background-color: orange;
+          }
+        }
+      }
+    }
+    .II-row {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      .I {
+        width: 30%;
+        height: 100%;
+        background-color: #27282a;
+      }
+      .II {
+        width: 70%;
+        height: 100%;
+        background-color: $III-color;
+        .icons {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+          color: #fff;
+          padding-left: 10px;
+          i {
+            border-radius: 50%;
+            border: 1px solid #fff;
+            padding: 10px;
+          }
+        }
+      }
+      // background-color: black;
+    }
+    .III-row {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      background-color: #27282a;
+      padding-left: 95px;
+      z-index: 1;
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        color: #a3a3a3;
+      }
+    }
+  }
+  .card-II {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .I-row {
+      width: 100%;
+      height: 15%;
+      display: flex;
+      .I {
+        height: 100%;
+        width: 40%;
+        background-color: $III-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .II {
+        height: 100%;
+        width: 60%;
+        background-color: $I-color;
+      }
+    }
+    .II-row {
+      width: 100%;
+      height: 55%;
+      background-color: $IIIV-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+      gap: 10px;
+      .info {
+        width: 99%;
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+          width: 100%;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          color: #a3a3a3;
+          .information {
+            display: flex;
+            flex-direction: column;
+            :first-child {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .III-row {
+      width: 100%;
+      height: 30%;
+      background-color: #27282a;
+    }
+  }
+  .card-III {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .I-row {
+      width: 100%;
+      height: 15%;
+      background-color: #f75525;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .II-row {
+      background-color: $V-color;
+      width: 100%;
+      height: 55%;
+      .I {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .infor {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 11px;
+        }
+      }
+    }
+    .III-row {
+      width: 100%;
+      height: 30%;
+      background-color: $VI-color;
+      display: flex;
+      align-content: space-around;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      span {
+        color: $III-color;
+      }
+    }
+  }
+}

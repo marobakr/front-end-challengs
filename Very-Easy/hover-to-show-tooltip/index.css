@@ -1,0 +1,61 @@
+div {
+  width: 97%;
+  height: 200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div > span {
+  color: #fff;
+  position: relative;
+  padding: 20px;
+  background-color: red;
+}
+
+div > span::after {
+  content: "this is tooltip content";
+  top: -75px;
+  width: 110%;
+  padding: 20px;
+  height: 20px;
+  color: #fff;
+  position: absolute;
+  left: -26.5px;
+  background-color: #333;
+}
+
+div > span:before {
+  content: "";
+  left: 40%;
+  position: absolute;
+  top: -15px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #333 transparent transparent;
+}
+
+div > span:before, div > span::after {
+  visibility: hidden;
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0;
+}
+
+div > span:hover::before, div > span:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,178 @@
+:root {
+  --pading-main:20px
+;
+}
+
+.card-wight {
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.card-black {
+  background-color: #000;
+  padding-left: 20px;
+}
+
+.parent {
+  display: -ms-grid;
+  display: grid;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #eee;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 50px;
+}
+
+.parent .I {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.parent .II {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.parent .III {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  color: #fff;
+}
+
+.parent .III h3, .parent .III h4, .parent .III p {
+  color: #fff;
+}
+
+.parent .IV {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.parent .V {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-color: black;
+  padding-left: var(--pading-main);
+}
+
+.parent .V h3, .parent .V h4, .parent .V p {
+  color: #fff;
+}
+
+.parent .V p {
+  font-size: 12px;
+}
+
+.parent .VI {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.parent .VII {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.parent .VIII {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.parent .VIII h3, .parent .VIII h4, .parent .VIII p {
+  color: #fff;
+}
+
+.parent .IX {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.parent .X {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.parent h3, .parent h4 {
+  color: black;
+}
+
+.parent p {
+  color: #0009;
+}
+
+.parent p {
+  font-size: 12px;
+}
+
+.parent div {
+  border-bottom: 2px solid red;
+  position: relative;
+}
+
+.parent span {
+  width: 6px;
+  height: 12px;
+  background-color: #c3baba;
+  border-top-left-radius: 21px;
+  right: 10px;
+  border-bottom-right-radius: 20px;
+  bottom: 6px;
+  position: absolute;
+}
+
+.parent span::after {
+  content: "";
+  width: 6px;
+  height: 12px;
+  background-color: #c3baba;
+  border-top-left-radius: 21px;
+  right: 9px;
+  border-bottom-right-radius: 21px;
+  bottom: -1px;
+  position: absolute;
+}
+/*# sourceMappingURL=index.css.map */

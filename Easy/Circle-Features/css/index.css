@@ -1,0 +1,174 @@
+.app {
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.app p {
+  font-family: serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #837e7e;
+}
+
+.app .title {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.app .title h1 {
+  width: 100%;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.app .title p {
+  width: 100%;
+}
+
+.app .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.app .card h1 {
+  font-size: 20px;
+}
+
+.app .card .I h1 {
+  text-align: end;
+}
+
+.app .card .III h1 {
+  text-align: start;
+}
+
+.app .card .column {
+  text-align: center;
+}
+
+.app .card .background {
+  position: relative;
+}
+
+.app .card .background h1 {
+  position: absolute;
+  color: #fff;
+  top: 30%;
+  left: 17%;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.app .card .background img {
+  width: 600px;
+  border-radius: 50%;
+  height: 600px;
+  z-index: -1;
+}
+
+.app .card .background::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-color: #9e9e9e54;
+  z-index: 0;
+}
+
+.app .card .background::before {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deleniti incidunt? Minus ab, molestiae commodi molestias tempora ex, laboriosam quas it amet consectetur adipisicing elit. Excepturi, deleniti incidunt? Minus ab, molestiae commodi commodi molestias tempora ex, laboriosam commodi molestias tempora ex, laboriosam molestias tempora ex, laboriosam quas.";
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  line-height: 2.5;
+  z-index: 1;
+  width: 80%;
+  top: 35%;
+  left: 7%;
+  text-align: center;
+  color: #9e9e9e;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.app .card ._frist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.app .card ._frist .features .icons {
+  position: relative;
+}
+
+.app .card ._frist .features .icons .fa-docker {
+  background-color: #080808;
+  color: #071b53;
+}
+
+.app .card ._frist .features .icons .fa-linux {
+  background-color: #080808;
+  color: #c9c60f;
+}
+
+.app .card ._frist .features .icons .fa-book-medical {
+  color: #0f7fc9;
+  background-color: #080808;
+}
+
+.app .card ._frist .features .icons .fa-hacker-news {
+  color: #310fc9;
+  background-color: #080808;
+}
+
+.app .card ._frist .features .icons .icons {
+  position: absolute;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #fff;
+  text-align: center;
+  border-radius: 50%;
+  top: -90px;
+}
+
+.app .card ._frist .features .icons .icons::before {
+  top: 15px;
+  position: relative;
+}
+
+.app .card ._frist .features .icons ._I {
+  -webkit-transform: translate(280px, 44px);
+          transform: translate(280px, 44px);
+}
+
+.app .card ._frist .features .icons ._II {
+  -webkit-transform: translate(-370px, 33px);
+          transform: translate(-370px, 33px);
+}
+/*# sourceMappingURL=index.css.map */

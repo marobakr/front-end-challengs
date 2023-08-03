@@ -1,0 +1,206 @@
+.app {
+  width: 50%;
+  height: 650px;
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (min-width: 577px) {
+  .app {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    width: 75%;
+  }
+}
+
+.app .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.app .container .card {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .app .container .card {
+    width: 49%;
+  }
+}
+
+@media (min-width: 577px) {
+  .app .container .card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 780px) {
+  .app .container .card {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .app .container .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .app .container .card {
+    width: 28%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .app .container .card {
+    width: 25%;
+  }
+}
+
+.app .container .card .title {
+  width: 70%;
+  height: 30%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 1px solid #1c97fc;
+}
+
+.app .container .card .title span {
+  height: 89%;
+  position: relative;
+  max-width: 100%;
+  border-radius: 50%;
+  background-color: #1c97fc;
+  border: 10px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.app .container .card .title span .premum {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #1c97fc;
+  top: 5px;
+  color: #1c97fc;
+}
+
+.app .container .card .body {
+  width: 100%;
+  height: 85%;
+  border: 1px solid #6684b1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #1c97fc;
+  z-index: 0;
+  position: absolute;
+  top: 100px;
+}
+
+.app .container .card .body h1 {
+  padding-top: 75px;
+  text-transform: uppercase;
+}
+
+.app .container .card .body p {
+  position: relative;
+}
+
+.app .container .card .body p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #a375758c;
+  left: 0;
+  z-index: 2;
+  top: -18px;
+}
+
+.app .container .card .body hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #6684b1;
+}
+
+.app .container .card .body button {
+  width: 65%;
+  margin: auto;
+  padding: 25px;
+  color: #1c97fc;
+  border: none;
+  border-radius: 65px;
+  background-color: #fff;
+}
+
+.app .container .II .title {
+  border: 1px solid #6684b1;
+}
+
+.app .container .II .title span {
+  background-color: #6684b1;
+  border: 10px solid #fff;
+}
+
+.app .container .II .body {
+  background-color: #fff;
+  color: #6684b1;
+}
+
+.app .container .II .body button {
+  background-color: #1c97fc;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,248 @@
+p {
+  color: #a0a0a0;
+}
+
+h2, span {
+  color: #e2e2e2;
+}
+
+h2, p {
+  margin: 0;
+}
+
+.app .container, .app .downfooter .card {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.app {
+  width: 98%;
+  padding-top: 30px;
+  background-color: #333;
+}
+
+@media (min-width: 1000px) {
+  .app {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+.app .container .upfooter {
+  padding-bottom: 30px;
+  width: 100%;
+  height: 70%;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .app .container .upfooter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.app .container .upfooter .contact_us, .app .container .upfooter .information, .app .container .upfooter .myaccont, .app .container .upfooter .newsliiter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .container .upfooter .contact_us {
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.app .container .upfooter .contact_us h2 {
+  width: 100%;
+}
+
+.app .container .upfooter .contact_us p {
+  width: 100%;
+  color: #a0a0a0;
+}
+
+.app .container .upfooter .contact_us .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .container .upfooter .contact_us .info p {
+  margin: 0;
+}
+
+.app .container .upfooter .contact_us .info .right, .app .container .upfooter .contact_us .info .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.app .container .information, .app .container .myaccont {
+  width: 15%;
+  height: 100%;
+  gap: 10px;
+}
+
+.app .container .information p, .app .container .myaccont p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .app .container .information {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .app .container .myaccont {
+    width: 40%;
+  }
+}
+
+.app .container .newsliiter {
+  width: 40%;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .app .container .newsliiter {
+    width: 100%;
+  }
+}
+
+.app .container .newsliiter .order {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.app .container .newsliiter .order input {
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff17;
+  border: none;
+  outline: none;
+}
+
+.app .container .newsliiter .order button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: red;
+  color: #e2e2e2;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.app .container .newsliiter .icons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.app .container .newsliiter .icons i {
+  color: #e2e2e2;
+  width: calc(90%/5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.app .container .newsliiter .icons .fa-twitter {
+  background-color: #1b9cd8;
+}
+
+.app .container .newsliiter .icons .fa-facebook {
+  background-color: rgba(10, 103, 190, 0.726);
+}
+
+.app .container .newsliiter .icons .fa-youtube {
+  background-color: #d81b1b;
+}
+
+.app .container .newsliiter .icons .fa-instagram {
+  background-color: #770028;
+}
+
+.app .container .newsliiter .fa-linkedin {
+  background-color: #074ba3;
+}
+
+.app .downfooter {
+  background-color: #2b2b2b;
+  padding: 20px;
+}
+
+.app .downfooter .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .downfooter .creadit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15%;
+}
+
+@media (max-width: 1000px) {
+  .app .downfooter .creadit {
+    width: 25%;
+  }
+}
+
+.app .downfooter .creadit i {
+  width: calc(100%/4);
+}
+
+.app .downfooter .creadit .fa-paypal {
+  color: #1b9cd8;
+}
+
+.app .downfooter .creadit .fa-cc-visa {
+  color: #fff;
+}
+
+.app .downfooter .creadit .fa-credit-card {
+  color: darkgray;
+}
+
+.app .downfooter .creadit .fa-cc-amazon-pay {
+  color: orange;
+}
+/*# sourceMappingURL=index.css.map */

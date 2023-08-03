@@ -1,0 +1,111 @@
+* {
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent {
+  width: 350px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #eee;
+}
+
+.parent .card {
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
+  border-radius: 5px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (100px)[5];
+      grid-template-rows: repeat(5, 100px);
+}
+
+.parent .card img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.parent .card .img-II {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transform: translate(135%, -80%);
+  transform: translate(250px, 350%);
+}
+
+.parent .card .info {
+  padding-left: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3/7;
+}
+
+.parent .card .info h2 {
+  color: #585353;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.parent .card .info p {
+  color: #7e7575;
+  line-height: 25px;
+  font-size: 14px;
+  font-family: ui-sans-serif;
+  font-weight: 500;
+  color: #aba6a6;
+}
+
+.parent .card .info p span {
+  color: #06685f;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.parent .card .info i {
+  color: #06685f;
+}
+
+.parent .card .info .progress {
+  width: 95%;
+  background-color: #eee;
+  height: 15px;
+  position: relative;
+}
+
+.parent .card .info .progress:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 15px;
+  border-radius: 0 10px 10px 0px;
+  background-color: #06685f;
+}
+
+.parent .card .info .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent .card .info .footer span {
+  width: 33%;
+  padding: 20px;
+  padding-left: 0;
+}
+/*# sourceMappingURL=index.css.map */

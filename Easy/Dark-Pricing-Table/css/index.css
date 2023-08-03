@@ -1,0 +1,136 @@
+.app {
+  text-transform: capitalize;
+  width: 95%;
+  margin: 50px auto;
+  height: 500px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1350px) {
+  .app {
+    width: 80%;
+  }
+}
+
+.app .child {
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  width: 24%;
+  background-color: #242424;
+  border-left: 1px solid #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+  .app .child {
+    width: 90%;
+  }
+}
+
+@media (min-width: 577px) {
+  .app .child {
+    width: 49%;
+    margin-right: 1px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app .child {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .app .child {
+    width: 24%;
+  }
+}
+
+.app .child .head {
+  padding: 20px;
+  border-bottom: 1px solid #363636;
+}
+
+.app .child .card {
+  height: 45%;
+  color: #8f8888ad;
+}
+
+.app .child .card p {
+  padding-bottom: 10px;
+}
+
+.app .child .card .difrance {
+  background-color: inherit;
+  padding: 15px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-color: #363636;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+}
+
+.app .child button {
+  background-color: #242424;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  margin: auto;
+  color: #fff;
+  border: 1px solid #c5aaaabd;
+}
+
+.app .premium {
+  background-color: #03a9f4;
+  border: none;
+}
+
+@media (min-width: 1100px) {
+  .app .premium {
+    padding-top: 26px;
+    padding-bottom: 25px;
+    margin-top: -25px;
+  }
+}
+
+.app .premium .head {
+  border: none;
+}
+
+.app .premium .card .difrance {
+  background-color: inherit;
+  padding: 15px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-color: #ffffff7d;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+}
+
+.app .premium button {
+  background-color: inherit;
+}
+/*# sourceMappingURL=index.css.map */

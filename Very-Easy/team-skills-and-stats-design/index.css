@@ -1,0 +1,272 @@
+.parent .headr .container, .parent .card, .parent .font-awsome, .parent .about, .parent .cetagory, .parent .skills, .parent .footer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.parent .font-awsome, .parent .about, .parent .cetagory, .parent .skills, .parent .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.parent {
+  text-transform: capitalize;
+  width: 98%;
+}
+
+.parent .headr {
+  width: 100%;
+  background-color: #fff;
+  height: 65px;
+}
+
+.parent .headr .container {
+  width: 82%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent .headr .container .logo {
+  width: 100%;
+}
+
+.parent .headr .container .links {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parent .headr .container .links a {
+  width: calc(100%/4);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.parent .card {
+  width: 82%;
+  background-color: #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.parent .card h1 {
+  text-align: center;
+}
+
+.parent .card h1 span {
+  color: #2196f3;
+}
+
+.parent .card p {
+  line-height: 2;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.parent .font-awsome {
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.parent .font-awsome .desgn-font {
+  text-align: center;
+}
+
+.parent .font-awsome .desgn-font i {
+  color: rebeccapurple;
+}
+
+.parent .about {
+  width: 82%;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent .about .img {
+  width: 40%;
+}
+
+.parent .about .img img {
+  border: 6px solid #fff;
+}
+
+.parent .about .info {
+  width: 50%;
+}
+
+.parent .about .info p {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+  .parent .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .parent .about .info p {
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+
+.parent .cetagory {
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.parent .cetagory div {
+  width: 19%;
+  padding: 45px;
+  text-align: center;
+}
+
+.parent .cetagory .one {
+  background-color: #673ab7;
+}
+
+.parent .cetagory .tow {
+  background-color: #009688;
+}
+
+.parent .cetagory .there {
+  background-color: #e91e63;
+}
+
+.parent .skills {
+  width: 82%;
+  background-color: #eee;
+}
+
+.parent .skills .progress {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent .skills .progress span {
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.parent .skills .progress span::after {
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 80%;
+  background-color: #2196f3;
+}
+
+.parent .skills .progress span::before {
+  content: "ss";
+  position: absolute;
+  left: -40px;
+}
+
+.parent .skills .progress .one::after {
+  width: 70%;
+}
+
+.parent .skills .progress .tow::after {
+  width: 80%;
+}
+
+.parent .skills .progress .there::after {
+  width: 90%;
+}
+
+.parent .skills .progress .four::after {
+  width: 75%;
+}
+
+.parent .skills .progress .five::after {
+  width: 50%;
+}
+
+.parent .skills .progress .one::before {
+  content: "html";
+}
+
+.parent .skills .progress .tow::before {
+  content: "css";
+}
+
+.parent .skills .progress .there::before {
+  content: "sass";
+}
+
+.parent .skills .progress .four::before {
+  content: "javascript";
+  left: -70px;
+}
+
+.parent .skills .progress .five::before {
+  content: "typescript";
+  left: -70px;
+}
+
+.parent .footer {
+  width: 82%;
+  background-color: #333;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.parent .footer .info {
+  width: 50%;
+}
+
+.parent .footer .info span {
+  color: #2196f3;
+}
+
+.parent .footer .cupyright {
+  width: 13%;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,240 @@
+:root {
+  --border-radious: 5px;
+  --main-color:#ed4c21
+;
+}
+
+.app {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.parent {
+  width: 490px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  -ms-grid-rows: (150px)[10];
+      grid-template-rows: repeat(10, 150px);
+}
+
+.parent .overlay {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  left: 0;
+  border-radius: var(--border-radious);
+  height: 68%;
+  background-color: #ed4c2142;
+}
+
+.parent img {
+  width: 100%;
+  height: 68%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  border-radius: var(--border-radious);
+}
+
+.parent .card-info {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  z-index: 1;
+  margin-left: 6px;
+  border-radius: 8px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  margin-top: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  background-color: #122333;
+  color: #fff;
+}
+
+.parent .card-info h1 {
+  position: relative;
+  color: #fff;
+}
+
+.parent .card-info h1::after {
+  bottom: -11px;
+  left: 0;
+  height: 2px;
+  position: absolute;
+  content: "";
+  width: 40%;
+  background-color: var(--main-color);
+}
+
+.parent .card-info p {
+  color: #fff;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.parent .card-info p i {
+  color: green;
+  margin-left: -12px;
+  position: absolute;
+}
+
+.parent .card-info button {
+  background-color: var(--main-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.parent .description-card {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-bottom: 0;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  height: 50%;
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+}
+
+.parent .card {
+  background-color: #eee;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-right: 0;
+}
+
+.parent .card span {
+  color: var(--main-color);
+  font-family: sans-serif;
+}
+
+.parent .card h1 {
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #203040;
+}
+
+.parent .card p {
+  font-size: 17.7px;
+  color: #6e6e6ef7;
+}
+
+.parent .I {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  line-height: 24px;
+}
+
+.parent .II {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.parent .III {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.parent .footer {
+  width: 100%;
+  height: 68%;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  grid-row: 6/9;
+}
+
+.parent .overlay-2 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: -3;
+  grid-row: 9/6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  left: 0;
+  border-radius: var(--border-radious);
+  height: 68%;
+  background-color: #00000059;
+}
+
+.parent .info {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+  padding-left: 31px;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.parent .info p {
+  color: #fff;
+}
+
+.parent .info h2 {
+  position: relative;
+  color: #fff;
+}
+
+.parent .info h2::before {
+  left: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -7px;
+  content: "";
+  width: 20%;
+  background-color: var(--main-color);
+}
+
+.parent .info button {
+  background-color: var(--main-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.parent .footer-2 {
+  margin-top: 50px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-left: -20px;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+  z-index: 1;
+}
+/*# sourceMappingURL=index.css.map */

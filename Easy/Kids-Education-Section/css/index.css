@@ -1,0 +1,144 @@
+.app {
+  width: 50%;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .column {
+  width: calc(98% / 3);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .column .card-I {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .column .card-I .information {
+  background-color: #edbf47;
+  border-radius: 0;
+  color: #fff;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.app .column .card-I .information h1 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.app .column .card-I .information button {
+  color: #fff;
+  border: none;
+  background-color: #e1b543;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.app .column .card-I .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .column .card-I .img img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.app .column .card-II {
+  width: 100%;
+  height: 35%;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app .column .card-II .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .column .card-II .img img {
+  max-width: 100%;
+}
+
+.app .column .card-II .info {
+  background-color: #6fc191;
+  padding: 15px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.app .column-II .info-card {
+  background-color: #ec774b;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.app .column-II .information {
+  padding-right: 15px;
+  background-color: #e16c6c !important;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.app .column-II .information button {
+  background-color: #af5a5a !important;
+}
+
+.app .column-II .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 44px;
+  background-color: red;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.app .column-III .card-I .information {
+  padding: 40px;
+}
+
+.app .column-III .info {
+  padding: 85px;
+  border-radius: 0 0 5px 5px;
+  background-color: #c389ce;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,48 @@
+div {
+  width: 97%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+ > span {
+    color: #fff;
+  position: relative;
+  padding: 20px;
+  background-color: red;  
+  &::after {
+    content: "this is tooltip content";
+    top: -75px;
+    width: 110%;
+    padding: 20px;
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    left: -26.5px;
+    background-color: #333;
+  }
+  &:before {
+    content: "";
+    left: 40%;
+    position: absolute;
+    top: -15px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #333 transparent transparent;
+  }
+  &:before, &::after {
+    visibility: hidden;
+    transition: .8s;
+    opacity: 0;
+  } 
+  &:hover::before,&:hover::after{
+      opacity: 1;
+      visibility: visible;
+    
+    }
+  }
+
+}
+

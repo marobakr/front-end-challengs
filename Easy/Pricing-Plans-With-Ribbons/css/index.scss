@@ -1,0 +1,104 @@
+$mian-border:5px;
+body {
+  background-color: #e4f0f8;
+}
+.app {
+  width: 60%;
+  padding-top:15px;
+  height: 500px;
+  padding-bottom: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width:676px) {
+      width: 100%
+  }
+  @media (min-width:677px) {
+    width:77%
+  }
+  .tow {
+    margin-top: 20px;
+  }
+  .there {
+    margin-top: 40px;
+  }
+  .card {
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+  width: 20%;
+  border-radius: $mian-border;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media (max-width:610px) {
+    height:88%
+}
+@media (min-width:611px) {
+  height:82%
+}
+@media (min-width:671px) {
+  height:75%
+}
+@media (min-width:677px) {
+  height:90%
+}
+@media (min-width:855px) {
+  height:75%
+}
+@media (min-width:900px) {
+  height:70%
+}
+   h1 {
+     padding:0px 20px;
+     font: {
+      family:monospace;
+      weight:400;
+    }
+   }
+  //  Global Span
+   span {
+    position: relative;
+    left: -36px;
+    padding: 7px;
+    border-radius: 0px 10px 10px 0px;
+    width: 100px;
+    color: #fff;
+    &::before {
+      content: "";
+      position:absolute;
+      border: {
+        width: 4px;
+        style: solid
+        // color:  #13c8a6 transparent transparent transparent;
+      };
+      transform: rotate(-45deg);
+      top: -4px;
+      left: 2px;
+    }
+  }
+    .I {
+      background-color: #13c8a6;
+  }
+  span.I::before {
+    border-color: #13c8a6 transparent transparent transparent;
+  }
+  .II {
+      background-color: #efcb53;
+  }
+  span.II::before {
+    border-color: #efcb53 transparent transparent transparent;
+  }
+  .III {
+    background-color: #555fae;
+} span.III::before {
+  border-color: #555fae transparent transparent transparent;
+}
+   button {
+    padding: 10px;
+    border-radius: $mian-border;
+    border: none;
+    color: #fff;
+   }
+ }
+}

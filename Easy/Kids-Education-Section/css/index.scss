@@ -1,0 +1,102 @@
+$main-border: 5px;
+.app {
+  width: 50%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  .column {
+    width: calc(98% / 3);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    .card-I {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      .information {
+        background-color: #edbf47;
+        border-radius: 0;
+        color: #fff;
+        h1 {
+          text-transform: uppercase;
+          font-size: 15px;
+        }
+        padding : {
+          left: 15px;
+          bottom: 15px;
+        }
+        button {
+          color: #fff;
+          border: none;
+          background-color: #e1b543;
+          padding: 10px 15px;
+          border-radius: $main-border;
+          text-transform: capitalize;
+        }
+      }
+      .img {
+        display: flex;
+        img {
+          border-radius: $main-border;
+          max-width: 100%;
+        }
+      }
+    }
+    .card-II {
+      width: 100%;
+      height: 35%;
+      margin-top: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .img {
+        display: flex;
+        img {
+          max-width: 100%;
+        }
+      }
+      .info {
+        background-color: #6fc191;
+        padding: 15px;
+        border-radius: 0px 0px 5px 5px;
+      }
+    }
+  }
+  .column-II {
+    .info-card {
+      background-color: #ec774b;
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    .information {
+      padding-right: 15px;
+      background-color: #e16c6c !important;
+      flex-grow: 1;
+      button {
+        background-color: #af5a5a !important;
+      }
+    }
+    .info {
+      display: flex;
+      flex-grow: 1;
+      padding: 44px;
+      background-color: red;
+      border-radius: 5px 5px 0px 0px;
+    }
+  }
+  .column-III {
+    .card-I {
+      .information {
+        padding: 40px;
+      }
+    }
+    .info {
+      padding: 85px;
+      border-radius: 0 0 5px 5px;
+      background-color: #c389ce;
+    }
+  }
+}
